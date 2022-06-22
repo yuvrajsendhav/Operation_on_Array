@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operation on Array</title>
+</head>
+<body>
+<script type="text/javascript">
+	let book=["hindi","math","eng","bio","Evs"];
+	//document.write(book.length);            //LENGTH :- it shows the no of element in array
+
+	/*
+	book.push("hindi")                        //PUSH :- It add extra element in array
+	document.write(book);
+	*/
+
+	/*
+	book.unshift("hindi")                        // UNSHIFT :- It add extra element at 0 index position in array
+	document.write(book);
+	*/
+
+    /*
+	book.pop();    // POP :-It removes element at last index position in the array. 1 pop remove 1 element from last position
+	document.write(book);
+	*/
+     
+     /*
+	book.shift();    // POP :-It removes element at last index position in the array. 1 pop remove 1 element from last position
+	document.write(book);
+     */
+      
+      /*
+     book.splice(2,2);  // SPLICE :- It removes element of array at any position by passing from position and how many  element
+     document.write(book); //        Splice remove element left to right direction
+      */
+
+      /*
+      book=[];                // this method use for empty th array
+      book.length=0;          // this is also use for empty the array
+      console.log(book);
+      */
+
+      /*
+      let yuvi=book.indexOf("Evs");  //   indexOf find the position of element in the array
+      document.write(yuvi);
+      */
+
+       /*
+      document.write(Array.isArray(book)); // Array.isArray check the type of Array or not it return true or false value
+	  */
+	
+	/*
+	 let text= "This is Yuvraj Thakur"; // The split () method splits a string into an array of substrings. The split ()
+	                                      //         method returns the new array. The split () method does not change the original string.
+	                                      
+	  let tr = text.split(' ');                                    
+	 document.write(tr);
+	 */
+
+                                                   //The join() method returns an array as a string.
+                                                      //The join() method does not change the original array.
+                                                      //Any separator( - . , space) can be specified. The default is comma (,).
+    let yuvi=book.join("-");
+    document.write(yuvi);
+</script>
+</body>
+</html>
