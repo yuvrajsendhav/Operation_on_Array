@@ -8,7 +8,7 @@
 <body>
 <script type="text/javascript">
 	let book=["hindi","math","eng","bio","Evs"];
-	//document.write(book.length);            //LENGTH :- it shows the no of element in array
+	//document.write(book.length);*/            //LENGTH :- it shows the no of element in array
 
 	/*
 	book.push("hindi")                        //PUSH :- It add extra element in array
@@ -20,15 +20,14 @@
 	document.write(book);
 	*/
 
-    /*
-	book.pop();    // POP :-It removes element at last index position in the array. 1 pop remove 1 element from last position
-	document.write(book);
-	*/
+    
+	/*book.pop();    // POP :-It removes element at last index position in the array. 1 pop remove 1 element from last position
+	document.write(book);*/
+	     
      
-     /*
-	book.shift();    // POP :-It removes element at last index position in the array. 1 pop remove 1 element from last position
-	document.write(book);
-     */
+	/*book.shift();    // POP :-It removes element at 0 index position in the array. 1 shift remove 1 element from o index position
+	document.write(book);*/
+     
       
       /*
      book.splice(2,2);  // SPLICE :- It removes element of array at any position by passing from position and how many  element
@@ -36,33 +35,90 @@
       */
 
       /*
-      book=[];                // this method use for empty th array
+      book=[];                // this method use for empty the array
       book.length=0;          // this is also use for empty the array
       console.log(book);
       */
 
       /*
-      let yuvi=book.indexOf("Evs");  //   indexOf find the position of element in the array
+      let yuvi=book.indexOf("Evs");                           //   indexOf find the position of element in the array
       document.write(yuvi);
       */
 
        /*
-      document.write(Array.isArray(book)); // Array.isArray check the type of Array or not it return true or false value
+      document.write(Array.isArray(book));         // Array.isArray check the type of Array or not it return true or false value
 	  */
+
+	  
+	  var numbers=[1,5,6,6,4,2,23,3,22,24,18,5];    // remove duplicates from Array
+	/*var yuvi = [...new Set(numbers)];
+	// 1,2,3,4,5
+	document.write(yuvi);
+	*/
 	
 	/*
-	 let text= "This is Yuvraj Thakur"; // The split () method splits a string into an array of substrings. The split ()
-	                                      //         method returns the new array. The split () method does not change the original string.
-	                                      
-	  let tr = text.split(' ');                                    
+	 let text= "This is Yuvraj Thakur";     // The split () method splits a string into an array of substrings.
+	                                        //The split ()method returns the new array. 
+	 let tr = text.split(' ');         //The split ()method doesnot change the original string.                                  
 	 document.write(tr);
 	 */
 
-                                                   //The join() method returns an array as a string.
-                                                      //The join() method does not change the original array.
+    /*let yuvi=book.join("-");                        //The join() method returns an array as a string.
+    document.write(yuvi);*/                           //The join()method doesn't change the original array.
                                                       //Any separator( - . , space) can be specified. The default is comma (,).
-    let yuvi=book.join("-");
-    document.write(yuvi);
+    
+
+
+    /*let yuvi=numbers.sort();           // sort() method use for sorting like 1---6 and a----z 
+    let yuvi=book.sort();
+    document.write(yuvi);*/
+
+
+
+
+   /* let yuvi=book.reverse();             //  Reverse() method use for reverse element of Array from last to first index
+    document.write(yuvi);*/
+
+
+   /*let yuvi=numbers.filter(CheckAdult);
+   document.write(yuvi);
+   function CheckAdult(numbers)
+   {
+   	return numbers >= 18;
+   }
+
+   //         OR
+   let team = [
+   {
+   	name: "Ram",Position:"Developer"        // filter() Method filter the targeted element
+   },
+   {
+   	name: "Shyam",Position:"UI Designer"
+   },
+   {
+   	name: "Yuvraj",Position:"Developer"
+   },
+   {
+   	name: "Uma",Position:"HR"
+   },
+   ];
+ let yuvi = team.filter(val => val.Position == "Developer");
+ */
+  
+
+  /*book.forEach(function(yuvi,index)
+  {
+    document.write(index+yuvi+"<br>");      // for Each() method calls a function for each element in an array
+  }                                         // for Each() method is not executed for empty elements.
+  );*/                                      // index showing position 
+
+
+    let yuvi = numbers.map(test);          // map() creates a new array from calling a function for every array element.
+    document.write(yuvi);                  // map() calls a function once for each element in an array.
+    function test(x)                       // map() does not execute the function for empty elements.
+    {                                      // map() does not change the original array.
+    	return x * 10;
+    }
 </script>
 </body>
 </html>
